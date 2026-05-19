@@ -22,6 +22,10 @@ html, body {
   height: 100%;
 }
 
+div.time-date{
+  color: blank;
+}
+
 body {
   font-family: 'Karla';
   padding: 1em;
