@@ -14,9 +14,27 @@
 
   <link rel="icon" href="./assets/logo.png">
   <link href="styles/style.css" rel="stylesheet">
+  <style>
+    /* Apply background to the whole page */
+    body {
+        margin: 0; /* Remove default margin */
+        height: 100vh; /* Full viewport height */
+        background-image: url('https://raw.githubusercontent.com/Stephen-W-Sodexo/visitor-kiosk/refs/heads/main/assets/merck-background.jpg'); /* Path to your image */
+        background-size: cover; /* Scale image to cover entire area */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent tiling */
+        background-attachment: fixed; /* Keep image fixed on scroll */
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 </head>
 
-<body x-data="dataModel" x-cloak :class="theme" style="background-image: url('https://github.com/Stephen-W-Sodexo/visitor-kiosk/blob/main/assets/merck-background.jpg?raw=true'); background-repeat: no-repeat; background-size: cover;">
+<body x-data="dataModel" x-cloak :class="theme">
   <header>
     <div @click="location.reload()" class="logo"></div>
     <div class="time-date">
